@@ -24,7 +24,7 @@ COPY . .
 RUN npm install
 FROM debian:bullseye
 
-RUN apt-get update; apt install -y curl wget
+RUN apt-get update; apt install -y curl wget procps
 
 LABEL fly_launch_runtime="nodejs"
 
